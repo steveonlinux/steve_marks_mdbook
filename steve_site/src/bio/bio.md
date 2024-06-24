@@ -16,7 +16,7 @@ I am excited about the opportunities to bring my technical acumen and passion fo
 * Films 🎥
 * Camping & Hiking 🌲
 * Cooking & Baking 🍳
-* Socializing
+* Socializing 🗣️
 
 ---
 
