@@ -1,5 +1,5 @@
 # Steve's Blog
 
-This will be a blog where I will dump anything I want. It will probably be mostly tech related. Specifically Linux and open source stuff. Thoughts, critiques, criticisms, guides, projects, anything. However, there will probably be some life stuff here too.
+This will be a blog where I will dump anything I want. It will probably be mostly tech related. Specifically Linux and open source stuff. Thoughts, critiques, criticisms, guides, advice, projects, anything. However, there will probably be some life stuff here too.
 
 # Enjoy
