@@ -4,5 +4,5 @@
 }
 
 body {
- font-size: var(--font-size, 100%);
+ font-size: var(--font-size, 240%);
 }
