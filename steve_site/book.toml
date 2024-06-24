@@ -4,3 +4,6 @@ language = "en"
 multilingual = false
 src = "src"
 title = "Stephen Mark's Personal Website"
+
+[output.html]
+additional-css = ["custom.css"]
