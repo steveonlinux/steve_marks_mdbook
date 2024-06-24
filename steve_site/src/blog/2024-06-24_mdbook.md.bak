@@ -1,0 +1,11 @@
+# Why mdbook?
+ There are a plethora of static site generation tools out there. One could esseentiall use any language or 
+framework they desire. My requiremnts were a tool that is visually and functionally simple. I am not a front end developer, and I have no desire to be one. My first attempt was using a [Jekyll]() template. While Jekyll and it's templates seem decent, they didn't offer the amount of editing capabilites I was looking for. Rather than being locked into a directory structure or toolbar formatting. Eventually, since I have experience with writing in Markdown, esepcially with Gitbooks and mdbook I decided to use what I am most famialr with. 
+
+## Why Markdown is Amazing
+Markdown is probably the best text formatting "language" other than Latex. It is simple and portable. It's parsed and ultimately covnerted into HTML so it can exist essentially anywhere. And tools like Pandoc allow one to convert into into any document format one needs like pdf or troff for man pages. Aside form conversions numerous platforms support markdown natively like Github and the note taking program Obsidian. One could write Markdown in one, and take it essentially anywhere. Notes, webpages, and documentation oh my. And if you need functionality the specific parser you;re using doesn't support, many support overriding the defaults becuase , everythig will ultimatley be HTML and CSS. You could resort to editing anythign you needed to by hand anyway.
+
+## mdbook As A Personal Site
+mdbook is defintly intended to be used for books, not personal sites. However the chapter bar is fucntionally a navbar,each, I can still lint to other pages from within a page if I ahve to, and it naturally lends itself to a blog. Now thecons are that mdbook lacks a tagging system. Or any system for automatically maintaing blog posts. However, like I said, I'm not locked into any sturcture. I can invent any scheme my heart desires through the use of shel lscripts and Github actions. I can design a system that assigns names according to a convention, fills in content for posts according to a template, orders the posts my date written, etc. All that being said, I was always looking for something qucik and dirt, where I can jsut market myself and felx my interests. This will do.
+
+
