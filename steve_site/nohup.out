@@ -1,0 +1,21 @@
+2024-06-23 13:32:26 [INFO] (mdbook::book): Book building has started
+2024-06-23 13:32:26 [INFO] (mdbook::book): Running the html backend
+2024-06-23 13:32:26 [INFO] (mdbook::cmd::serve): Serving on: http://localhost:3000
+2024-06-23 13:32:26 [INFO] (mdbook): Opening web browser
+2024-06-23 13:32:26 [INFO] (mdbook::cmd::watch::poller): Watching for changes...
+2024-06-23 13:32:26 [ERROR] (mdbook::cmd::serve): Unable to serve: panicked at /home/steve/.cargo/registry/src/index.crates.io-6f17d22bba15001f/warp-0.3.7/src/server.rs:217:27:
+error binding to [::1]:3000: error creating server listener: Address already in use (os error 98)
+2024-06-23 13:38:57 [INFO] (mdbook::book): Book building has started
+2024-06-23 13:38:57 [INFO] (mdbook::book): Running the html backend
+2024-06-23 13:38:57 [INFO] (mdbook::cmd::serve): Serving on: http://localhost:3000
+2024-06-23 13:38:57 [INFO] (mdbook): Opening web browser
+2024-06-23 13:38:57 [INFO] (mdbook::cmd::watch::poller): Watching for changes...
+2024-06-23 13:38:57 [INFO] (warp::server): Server::run; addr=[::1]:3000
+2024-06-23 13:38:57 [INFO] (warp::server): listening on http://[::1]:3000
+2024-06-23 13:39:56 [INFO] (mdbook::book): Book building has started
+2024-06-23 13:39:56 [INFO] (mdbook::book): Running the html backend
+2024-06-23 13:39:56 [INFO] (mdbook::cmd::serve): Serving on: http://localhost:3000
+2024-06-23 13:39:56 [INFO] (mdbook): Opening web browser
+2024-06-23 13:39:56 [INFO] (mdbook::cmd::watch::poller): Watching for changes...
+2024-06-23 13:39:56 [INFO] (warp::server): Server::run; addr=[::1]:3000
+2024-06-23 13:39:56 [INFO] (warp::server): listening on http://[::1]:3000
