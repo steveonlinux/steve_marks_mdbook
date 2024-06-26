@@ -1,4 +1,4 @@
-# Learning Linux Resources (2024-06-26)
+# Linux Learning Resources (2024-06-26)
 I am currently a [RHCSA](https://www.redhat.com/en/services/certification/rhcsa) who will eventually be an [RHCE](https://www.redhat.com/en/services/certification/rhce). This requires me to keep my skills fresh. The learning seemingly never stops; there is always something else to know. Whether it be a new tool that is really cool, or a facet of something's design that is intriguing or indicates how it can be manipulated.
 <br> All this constant learning and re-learning requires resources. I've read an untold number of documentation/wiki articles, and have watched *countless* Youtube videos on topics relating to Linux. Here, I want to document the resources that have served me best and that have provided the most digestible knowledge. Maybe it will help others. It will be categorized along the lines of format. Also, each resource will be rated from 1-5 penguins 🐧. The more penguins the better.
 
