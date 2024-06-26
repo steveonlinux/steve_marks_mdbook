@@ -62,15 +62,15 @@ Dynamic system administrator and proficient coder, leveraging a broad knowledge 
 - Text Editing (VIM / VS)
 
 ## Languages 🌐
-- **Shell**: Fluent (75%)
-- **C**: Fluent (75%)
-- **Python**: Fluent (80%)
-- **Rust**: Basic (30%)
-- **Powershell**: Intermediate (60%)
+- **Shell**: Fluent 
+- **C**: Fluent 
+- **Python**: Fluent 
+- **Rust**: Basic 
+- **Powershell**: Intermediate 
 - **SQL**: Basic (50%)
-- **Assembly (x86 / ARM / MIPS)**: Competent (70%)
-- **AWK**: Basic (30%)
-- **HTML / CSS**: Intermediate (50%)
-- **Latex**: Intermediate (60%)
+- **Assembly (x86 / ARM / MIPS)**: Competent 
+- **AWK**: Basic (
+- **HTML + Markdown / CSS**: Fluent
+- **Latex**: Intermediate 
 
 

@@ -20,5 +20,5 @@
 ---
 
 # Links
-## Github
-* [steveonlinux](https://github.com/steveonlinux)
+* My Github: [steveonlinux](https://github.com/steveonlinux)
+* This site's [repo](https://github.com/steveonlinux/steve_marks_mdbook)

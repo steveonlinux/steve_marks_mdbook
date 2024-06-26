@@ -1,0 +1,42 @@
+# Learning Linux Resources
+I am currently a [RHCSA]() who wants to eventually be an [RHCE](). This requires me to keep my skills fresh. The learning seemingly never stops; there is always something else to know. Whether it be a new tool that is really cool, or a facet of something's design that is intriguing or indicates how it can be manipulated.
+<br> All this constant learning and re-learning requires resources. I've read an untold number of documentation/wiki articles, and have watched *countless* Youtube videos on topics relating to Linux. Here, I want to document the resources that have served me best and that have provided the most digestible knowledge. Maybe it will help others. It will be categorized along the lines of format then subtopic. Also, each resource will be rated from 1-5 penguins 🐧. The more penguins the better.
+
+## Books
+I find books the worst method of learning Linux. It isn't conducive to hands on learning. However, portions of these books so relay and explain underlying concepts pretty well. Most books take the form of that of a manual that is good for *referencing* but not *learning*. And even then, something printed on paper easily becomes outdated. Books that are meant for preparing for a specific exam are better as they often include lab material.
+
+
+* [Linux Bible](https://www.amazon.com/Linux-Bible-Christopher-Negus/dp/1119578884/)** by Christopher Negus, published on August 5, 2020. 🐧🐧🐧
+
+* [Unix and Linux System Administration Handbook](https://www.amazon.com/Unix-Linux-System-Administration-Handbook/dp/0134277554/)** by Evi Nemeth, Garth Snyder, Trent R. Hein, Ben Whaley, and Dan Mackin, published on July 14, 2017.🐧🐧🐧
+
+* [Red Hat RHCSA 9 Cert Guide: Red Hat Enterprise Linux 9 (EX200)](https://www.amazon.com/Red-Hat-RHCSA-Cert-Guide/dp/0137894327/)** by Sander van Vugt, published on January 7, 2023.
+🐧🐧🐧🐧
+
+* [Linux From Scratch](https://www.amazon.com/Linux-Scratch-Version-11-0-Introduction/dp/B09B3FQSGG/)** by Gerard Beekmans, published on August 1, 2021. 🐧🐧
+
+* [ProLUG Big Book of Labs](https://leanpub.com/theprolugbigbookoflabs) 🐧🐧🐧🐧🐧
+    * [ProLUG Book Git Repo](https://github.com/het-tanis/prolug-labs)
+
+* [Linux Kernel in a Nutshell](https://www.amazon.com/Linux-Kernel-Nutshell-Greg-Kroah-Hartman/dp/0596100795/)** by Greg Kroah-Hartman, published on December 22, 2006. 🐧🐧
+
+* [Linux Kernel Development](https://www.amazon.com/Linux-Kernel-Development-Robert-Love/dp/0672329468/)** by Robert Love, published on October 12, 2010. 🐧🐧
+
+## Wikis
+In my opinion, wikis are the ebst written resource. They oftne succintly describe the nature of soemthing and provide the most pertinent tools and their use cases. They are also written and maintained by the experts themselves. Examples are often provided as snippets that can be copied and pasted directly into a terminal.
+
+* [ArchWiki](https://wiki.archlinux.org/) 🐧🐧🐧🐧
+
+* [Gentoo Wiki](https://wiki.gentoo.org/) 🐧🐧🐧
+
+* [Red Hat Customer Portal](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/) 🐧🐧🐧🐧🐧
+
+* [Debian Wiki](https://wiki.debian.org/) 🐧
+
+## Websites
+There are websites out their specifically dedicated to learning Linux. Some are small readings that include a quizzes for example. Others are hands on labs similar to something like [HackTheBox](https://www.hackthebox.com/). Some are just there to help guide continuing education.
+
+* [OverTheWire(Bandit)](https://overthewire.org/wargames/) 🐧🐧🐧🐧🐧
+* [Linux Journey](https://linuxjourney.com/lesson/sysv-overview) 🐧🐧🐧🐧🐧
+* [DevOps Learning Roadmaps](https://roadmap.sh/devops) 🐧🐧🐧🐧🐧
+* [Kubernetes Learning Roadmaps](https://roadmap.sh/kubernetes) 🐧🐧🐧🐧🐧
