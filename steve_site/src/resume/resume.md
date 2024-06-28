@@ -67,9 +67,9 @@ Dynamic system administrator and proficient coder, leveraging a broad knowledge 
 - **Python**: Fluent 
 - **Rust**: Basic 
 - **Powershell**: Intermediate 
-- **SQL**: Basic (50%)
+- **SQL**: Basic
 - **Assembly (x86 / ARM / MIPS)**: Competent 
-- **AWK**: Basic (
+- **AWK**: Basic
 - **HTML + Markdown / CSS**: Fluent
 - **Latex**: Intermediate 
 

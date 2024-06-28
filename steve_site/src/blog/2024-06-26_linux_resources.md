@@ -40,3 +40,11 @@ There are websites out their specifically dedicated to learning Linux. Some are 
 * [Linux Journey](https://linuxjourney.com/lesson/sysv-overview) 🐧🐧🐧🐧🐧
 * [DevOps Learning Roadmaps](https://roadmap.sh/devops) 🐧🐧🐧🐧🐧
 * [Kubernetes Learning Roadmaps](https://roadmap.sh/kubernetes) 🐧🐧🐧🐧🐧
+
+## Youtube Channels
+The issue with Youtube channels relating to Linux is that they are often not related to administration at all. They are mostly from the perspective of a desktop user, albeit a poweruser. Some may lean towards admin more than others, and some may focus entirely on scripting. But most focus on the industry and landscape in general. Regardless, these are the channels I've watched and enjoyed over the years, and have learned from greatly.
+
+* [Chris Titus Tech](https://www.youtube.com/@ChrisTitusTech) 🐧🐧🐧🐧🐧
+* [Brodie Robertson](https://www.youtube.com/@BrodieRobertson)🐧🐧🐧
+* [DistoTube](https://www.youtube.com/@DistroTube)🐧🐧🐧🐧
+* [Linux Cast](https://www.youtube.com/@TheLinuxCast)🐧🐧
