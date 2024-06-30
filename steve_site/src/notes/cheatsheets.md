@@ -1400,6 +1400,140 @@
 | `nslookup`                               | Enter interactive mode (nslookup)                         |
 | `nslookup domain server`                 | DNS lookup using a specific DNS server                    |
 
+# System Diagnostics and Logging Cheatsheet
+
+## `dmesg`
+| Command                              | Description                                                                 |
+|--------------------------------------|-----------------------------------------------------------------------------|
+| `dmesg`                              | Display all messages from the kernel ring buffer                            |
+| `dmesg | less`                       | View messages with paging                                                   |
+| `dmesg | grep pattern`               | Search for a specific pattern in the kernel messages                        |
+| `dmesg -c`                           | Clear the ring buffer after printing                                        |
+| `dmesg -T`                           | Display human-readable timestamps for each message                          |
+| `dmesg -H`                           | Enable colorized and human-readable output                                  |
+| `dmesg -l level`                     | Filter messages by log level (e.g., `emerg`, `alert`, `crit`, `err`, `warn`, `notice`, `info`, `debug`) |
+| `dmesg -n level`                     | Set the log level of messages to print                                       |
+| `dmesg -f facility`                  | Filter messages by facility (e.g., `kern`, `user`, `mail`, `daemon`, `auth`, `syslog`, `lpr`, `news`, `uucp`, `cron`, `authpriv`, `ftp`, `local0`-`local7`) |
+| `dmesg -r`                           | Raw output, no human-readable timestamps                                    |
+| `dmesg --clear`                      | Clear the kernel ring buffer                                                |
+| `dmesg --level level`                | Set the log level for printing messages                                     |
+| `dmesg --facility facility`          | Set the facility for printing messages                                      |
+| `dmesg -w`                           | Keep waiting for new messages and print them as they come                   |
+| `dmesg --follow`                     | Alias for `-w`, keep waiting for new messages                                |
+
+## `journalctl`
+| Command                              | Description                                                                 |
+|--------------------------------------|-----------------------------------------------------------------------------|
+| `journalctl`                         | View the systemd journal                                                    |
+| `journalctl -b`                      | Show messages from the current boot                                         |
+| `journalctl -k`                      | Show only kernel messages                                                   |
+| `journalctl -u service`              | Show messages for a specific service                                        |
+| `journalctl -f`                      | Follow new messages as they appear (similar to `tail -f`)                   |
+| `journalctl -r`                      | Show messages in reverse chronological order                                |
+| `journalctl --since "time"`          | Show messages since a specific time                                         |
+| `journalctl --until "time"`          | Show messages until a specific time                                         |
+| `journalctl -p level`                | Show messages of a specific priority level (e.g., `emerg`, `alert`, `crit`, `err`, `warn`, `notice`, `info`, `debug`) |
+| `journalctl -xe`                     | Show the last few log entries with details about system errors              |
+| `journalctl --disk-usage`            | Show the disk space used by the journal                                     |
+| `journalctl --vacuum-time=time`      | Remove journal files older than the specified time                          |
+| `journalctl --vacuum-size=size`      | Remove old journal files until the total size is below the specified size   |
+| `journalctl -o json-pretty`          | Output logs in pretty JSON format                                           |
+
+## `rsyslog` (or `syslog` in general)
+| Command/Configuration                | Description                                                                 |
+|--------------------------------------|-----------------------------------------------------------------------------|
+| `/etc/rsyslog.conf`                  | Main configuration file for rsyslog                                         |
+| `/etc/rsyslog.d/`                    | Directory for additional configuration files                                |
+| `sudo systemctl restart rsyslog`     | Restart the rsyslog service                                                 |
+| `logger "message"`                   | Add a message to the system log                                             |
+| `/var/log/messages`                  | General system log                                                          |
+| `/var/log/secure`                    | Authentication and security related messages                                |
+| `/var/log/maillog`                   | Mail server logs                                                            |
+| `/var/log/cron`                      | Cron job logs                                                               |
+| `/var/log/boot.log`                  | System boot log                                                             |
+| `/var/log/dmesg`                     | Kernel ring buffer log                                                      |
+
+## `top` / `htop`
+| Command                              | Description                                                                 |
+|--------------------------------------|-----------------------------------------------------------------------------|
+| `top`                                | Display real-time system information including tasks and load               |
+| `htop`                               | Interactive process viewer (requires installation)                          |
+| `top -u username`                    | Show only processes for a specific user                                     |
+| `top -p PID`                         | Show only the specified PID(s)                                              |
+| `htop -u username`                   | Show only processes for a specific user (in htop)                           |
+
+## `free`
+| Command                              | Description                                                                 |
+|--------------------------------------|-----------------------------------------------------------------------------|
+| `free`                               | Display memory usage                                                        |
+| `free -h`                            | Display memory usage in human-readable format                               |
+| `free -m`                            | Display memory usage in megabytes                                           |
+| `free -g`                            | Display memory usage in gigabytes                                           |
+
+## `vmstat`
+| Command                              | Description                                                                 |
+|--------------------------------------|-----------------------------------------------------------------------------|
+| `vmstat`                             | Display virtual memory statistics                                           |
+| `vmstat 1`                           | Display virtual memory statistics every second                              |
+| `vmstat -s`                          | Display memory statistics                                                   |
+| `vmstat -d`                          | Display disk statistics                                                     |
+| `vmstat -t`                          | Display timestamps with the output                                          |
+
+## `iostat`
+| Command                              | Description                                                                 |
+|--------------------------------------|-----------------------------------------------------------------------------|
+| `iostat`                             | Display CPU and I/O statistics                                              |
+| `iostat -x`                          | Display extended statistics                                                 |
+| `iostat -d`                          | Display device utilization statistics                                       |
+| `iostat -c`                          | Display only CPU statistics                                                 |
+| `iostat -p ALL`                      | Display statistics for all devices and partitions                           |
+
+## `mpstat`
+| Command                              | Description                                                                 |
+|--------------------------------------|-----------------------------------------------------------------------------|
+| `mpstat`                             | Display CPU usage                                                           |
+| `mpstat -P ALL`                      | Display CPU usage for all processors                                        |
+| `mpstat 1 5`                         | Display CPU usage every second for 5 times                                  |
+
+## `sar`
+| Command                              | Description                                                                 |
+|--------------------------------------|-----------------------------------------------------------------------------|
+| `sar`                                | Collect and report system activity                                          |
+| `sar -u 1 3`                         | Report CPU utilization every second for 3 times                             |
+| `sar -r`                             | Report memory utilization                                                   |
+| `sar -n DEV`                         | Report network statistics                                                   |
+| `sar -b`                             | Report I/O and transfer rate statistics                                     |
+
+## `netstat` / `ss`
+| Command                              | Description                                                                 |
+|--------------------------------------|-----------------------------------------------------------------------------|
+| `netstat -tuln`                      | List all listening ports                                                    |
+| `netstat -i`                         | Display network interfaces                                                  |
+| `netstat -rn`                        | Display routing table                                                       |
+| `netstat -s`                         | Display network statistics                                                  |
+| `ss -tuln`                           | List all listening ports (ss command)                                       |
+| `ss -i`                              | Display network interfaces (ss command)                                     |
+| `ss -rn`                             | Display routing table (ss command)                                          |
+| `ss -s`                              | Display network statistics (ss command)                                     |
+
+## `iftop` (requires installation)
+| Command                              | Description                                                                 |
+|--------------------------------------|-----------------------------------------------------------------------------|
+| `iftop`                              | Display real-time network bandwidth usage                                   |
+| `iftop -i interface`                 | Display network bandwidth usage for a specific interface                    |
+| `iftop -P`                           | Show ports                                                                  |
+| `iftop -n`                           | Show numerical addresses rather than resolving hosts                        |
+
+## `tcpdump`
+| Command                              | Description                                                                 |
+|--------------------------------------|-----------------------------------------------------------------------------|
+| `tcpdump -i interface`               | Capture packets on a specific interface                                     |
+| `tcpdump -n host host`               | Capture packets to/from a specific host                                     |
+| `tcpdump -nn port port`              | Capture packets on a specific port                                          |
+| `tcpdump -w file.pcap`               | Write captured packets to a file                                            |
+| `tcpdump -r file.pcap`               | Read packets from a file                                                    |
+
+
 # Important `/proc` Subdirectories and Files
 
 | Directory/File                 | Description                                                                 |
