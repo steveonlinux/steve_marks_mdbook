@@ -1,0 +1,140 @@
+# Basic Calculus in C
+## [Numerical Methods of Differentiation](https://en.wikipedia.org/wiki/Numerical_differentiation)
+
+Anyone who has taken Calculus in school is familair with some numerical methods of differentiaion or integration. The basis of the definition of a derivative is itself an approximation:
+
+\\[ f'(x) = \lim_{{h \to 0}} \frac{f(x+h) - f(x)}{h} \\]
+
+A secant line where the distance between the two intersections is an infitiesemal.
+
+I've recently learned that this is a class of method known as the *[Finite Difference Method](https://en.wikipedia.org/wiki/Finite_difference_method)* where a derivative is calculated using the same difference quotient with a finite distance that is sufficiently small:
+
+\\[f'(x) \approx \frac{f(x+h) - f(x)}{h}\\]
+
+New to me is the *[Symmetric Difference Quotient](https://en.wikipedia.org/wiki/Symmetric_derivative)* which also approxiamtes the slope, but by using two secant lines equidistant from `x`.
+
+\\[f'(x) \approx \frac{f(x+h) - f(x-h)}{2h}\\]
+
+The accuracy will be off by a proportion of `h` using the former method and by `h^2` using the latter one.
+
+The accuracy will also be affected by the choice of forward, back, or central difference, round-off error, or truncation error, which funnily enough is often notated using big-O. 
+
+## [Numerical Methods of Integration](https://en.wikipedia.org/wiki/Numerical_integration#:~:text=In%20analysis%2C%20numerical%20integration%20comprises,applied%20to%20one%2Ddimensional%20integrals.)
+
+Riemann Sums is the other numerical method that is ofthen learned to introduce the concept of a derivative. And has been in use since antquity - like when Archimedes approximated the area of the circle through methods of exhaustion.
+
+Reimann sums partition the area under a curve either from the left, right, or midpoint and if those partitions or slices are sufficenly small, you get a good approximation. This method utlizes rectangles:
+
+\\[\int_{a}^{b} f(x) \, dx \approx \sum_{i=0}^{n-1} f\left( \frac{x_i + x_{i+1}}{2} \right) \Delta x\\]
+
+But can utlize other polygons such a trapezoids:
+
+\\[\int_{a}^{b} f(x) \, dx \approx \frac{\Delta x}{2} \left[ f(x_0) + 2 \sum_{i=1}^{n-1} f(x_i) + f(x_n) \right]\\]
+
+There are a plethora numerical methods for both differntiation and inegration that have been developed over the centuries that have their applications in enginerring, manufacturing, physics, and computer science.
+
+| Numerical Differentiation Methods            | Numerical Integration Methods              |
+|----------------------------------------------|--------------------------------------------|
+| Finite Difference Methods                    | Basic Methods                              |
+| - Forward Difference                         | - Rectangle Rule (Midpoint Rule)           |
+| - Backward Difference                        | - Trapezoidal Rule                         |
+| - Central Difference                         | - Simpson's Rule                           |
+| Higher-Order Finite Difference Methods       | Extended Newton-Cotes Formulas             |
+| - Second-Order Forward Difference            | - Simpson's 3/8 Rule                       |
+| - Second-Order Backward Difference           | - Boole's Rule                             |
+| - Second-Order Central Difference            | - Newton-Cotes Formulas                    |
+| - Higher-Order Central Differences           | Gaussian Quadrature                        |
+| Richardson Extrapolation                     | - Gauss-Legendre Quadrature                |
+| Spectral Methods                             | - Gauss-Chebyshev Quadrature               |
+| - Fourier Spectral Methods                   | - Gauss-Hermite Quadrature                 |
+| - Chebyshev Spectral Methods                 | - Gauss-Laguerre Quadrature                |
+| Spline Methods                               | Romberg Integration                        |
+| - Linear Spline Differentiation              | Adaptive Quadrature Methods                |
+| - Quadratic Spline Differentiation           | - Adaptive Simpson's Method                |
+| - Cubic Spline Differentiation               | - Adaptive Trapezoidal Method              |
+| Polynomial Interpolation Methods             | Multi-dimensional Methods                  |
+| - Lagrange Interpolation Differentiation     | - Monte Carlo Integration                  |
+| - Newton's Divided Difference Differentiation| - Quasi-Monte Carlo Methods                |
+| - Hermite Interpolation Differentiation      | - Sparse Grid Methods                      |
+| Least Squares Methods                        | - Cubature Rules                           |
+| - Least Squares Polynomial Differentiation   | Specialized Methods                        |
+| Numerical Methods for Specific Problems      | - Clenshaw-Curtis Quadrature               |
+| - Finite Volume Methods                      | - Lobatto Quadrature                       |
+| - Finite Element Methods                     | - Filon's Method (for oscillatory integrals)|
+| - Boundary Element Methods                   | - Double Exponential Integration           |
+| Miscellaneous Methods                        | Numerical Differentiation Based Methods    |
+| - Savitzky-Golay Filter                      | - Richardson Extrapolation                 |
+| - Automatic Differentiation                  | - Extrapolated Romberg Integration         |
+| - Complex Step Differentiation               | Modern Methods                             |
+|                                              | - Spectral Methods                         |
+|                                              | - Spline-based Methods                     |
+|                                              | - Quadrature by Expansion                  |
+|                                              | - Finite Element Method                    |
+
+## Numerical Methods in C
+
+Since these methods disctetize functions they are how one could create algorithms to perform differentiaiton or integration. For example:
+
+```c
+// Forward difference method
+double forward_difference(double x, double h) {
+    return (f(x + h) - f(x)) / h;
+}
+
+// Backward difference method
+double backward_difference(double x, double h) {
+    return (f(x) - f(x - h)) / h;
+}
+
+// Central difference method
+double central_difference(double x, double h) {
+    return (f(x + h) - f(x - h)) / (2 * h);
+}
+```
+These c function will approximate a derivative given some function.
+
+How about integration:
+
+```c
+// Trapezoidal rule function
+double trapezoidal(double a, double b, int n) {
+    double h = (b - a) / n;
+    double sum = 0.5 * (f(a) + f(b));
+    
+    for (int i = 1; i < n; i++) {
+        sum += f(a + i * h);
+    }
+    
+    return sum * h;
+}
+```
+
+This will calculate an integral given a number of subintervals.
+
+Or this:
+
+```c
+// Simpson's rule function
+double simpsons(double a, double b, int n) {
+    double h = (b - a) / n;
+    double sum = f(a) + f(b);
+    
+    for (int i = 1; i < n; i++) {
+        double x = a + i * h;
+        if (i % 2 == 0) {
+            sum += 2 * f(x);
+        } else {
+            sum += 4 * f(x);
+        }
+    }
+    
+    return sum * h / 3;
+}
+```
+
+Which does the same according to [Simpson's Rule](https://en.wikipedia.org/wiki/Simpson%27s_rule).
+
+
+
+
+
