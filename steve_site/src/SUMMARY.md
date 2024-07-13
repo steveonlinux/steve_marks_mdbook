@@ -9,5 +9,6 @@
   - [Linux Learning Resources Ranked](./blog/2024-06-26_linux_resources.md)
   - [Why mdbook?](./blog/2024-06-24_mdbook.md)
 - [Notes](./notes/notes.md)
+  - [Linux Journey](./notes/linux_journey.md)
   - [Cheatsheet Dump](./notes/cheatsheets.md)
 
