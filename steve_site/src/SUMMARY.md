@@ -10,7 +10,12 @@
   - [Linux Learning Resources Ranked](./blog/2024-06-26_linux_resources.md)
   - [Why mdbook?](./blog/2024-06-24_mdbook.md)
 - [Notes](./notes/notes.md)
-  - [Multivariable and Vector Calculus](./notes/calc3.md)
+  - [Math](./notes/math.md)
+    - [Single Variable Calculus](./notes/calc.md)
+    - [Multivariable and Vector Calculus](./notes/calc3.md)
+    - [Linear Algebra](./notes/linear.md)
+    - [Differential Equations](./notes/diff.md)
+    - [Physics](./notes/physics.md)
   - [Linux Journey](./notes/linux_journey.md)
   - [Cheatsheet Dump](./notes/cheatsheets.md)
 
