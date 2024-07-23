@@ -62,7 +62,7 @@ Again there are a plethora of way to utilize a Pi due to the sheer amount of ope
 
 I've used containers to run things like this as often as possible. Many utilities are available as container images on [Dockerhub](https://hub.docker.com/), however mileage may vary as ARM image are less common. I prefer containers due to the contained nature of the binaries and configurations. Everything can be contained in a single [docker-compose](https://docs.docker.com/compose/) file, which is very convenient. 
 In the past I've even had my Pis clustered using Kubernetes, but that was more for educational purposes. 
-I've also experimented with different Linux distributions on Pis. There is of course Pi OS, the officially supported one. However,the major distributions have ARM versions that on Pis and there are others specifically designed for Pis:
+I've also experimented with different Linux distributions on Pis. There is of course Pi OS, the officially supported one. However,the major distributions have ARM versions that run on Pis and there are others specifically designed for Pis:
 
 | Distribution         | Description                                                                                          | Website                               |
 |----------------------|------------------------------------------------------------------------------------------------------|---------------------------------------|
