@@ -8,43 +8,47 @@ A SBC or *single board computer* is a computer...on a single board. All the comp
 
 ## Buying Options
 There are many brands to choose from:
-| Manufacturer          | Flagship Board             | Processor                   | Architecture     | RAM Options     | Storage Options    | Connectivity                                     | Price Range        |
-|-----------------------|----------------------------|-----------------------------|------------------|-----------------|--------------------|--------------------------------------------------|--------------------|
-| Raspberry Pi          | Raspberry Pi 5             | Broadcom BCM2712            | ARM Cortex-A76   | 4GB, 8GB        | microSD, USB 3.0   | Wi-Fi 6, Bluetooth 5.0, Gigabit Ethernet         | $60 - $80          |
-| ASUS                  | Tinker Board 2S            | Rockchip RK3399             | ARM Cortex-A72/A53 | 2GB, 4GB       | 16GB eMMC, microSD | Wi-Fi 5, Bluetooth 4.2, Gigabit Ethernet         | $85 - $100         |
-| NVIDIA                | Jetson Nano 2GB            | NVIDIA Maxwell GPU          | ARM Cortex-A57   | 2GB             | microSD            | Wi-Fi (with USB adapter), Bluetooth (with USB)   | $59                |
-| ODROID                | ODROID-N2+                 | Amlogic S922X               | ARM Cortex-A73/A53 | 2GB, 4GB       | microSD, eMMC      | Gigabit Ethernet, Wi-Fi (with adapter), Bluetooth | $79 - $90          |
-| Rock Pi               | Rock Pi 4C+                | Rockchip RK3399             | ARM Cortex-A72/A53 | 4GB            | microSD, eMMC      | Wi-Fi 5, Bluetooth 5.0, Gigabit Ethernet         | $69.99             |
-| Banana Pi             | Banana Pi M5               | Amlogic S905X3              | ARM Cortex-A55   | 4GB             | microSD, eMMC      | Wi-Fi 5, Bluetooth 5.0, Gigabit Ethernet         | $64 - $75          |
-| Pine64                | Pine A64+                  | Allwinner A64               | ARM Cortex-A53   | 2GB, 4GB        | microSD            | Wi-Fi (with USB adapter), Bluetooth (with USB)   | $29.99 - $39.99    |
-| BeagleBoard           | BeagleBone AI-64           | TI AM5729                   | ARM Cortex-A15   | 4GB             | microSD, eMMC      | Wi-Fi, Bluetooth, Gigabit Ethernet               | $100 - $125        |
-| UDOO                  | UDOO Bolt V8               | AMD Ryzen V1605B            | x86-64           | 8GB, 16GB       | M.2 NVMe, SATA     | Wi-Fi, Bluetooth, Gigabit Ethernet               | $389 - $409        |
-| Khadas                | Khadas VIM3 Pro            | Amlogic A311D               | ARM Cortex-A73/A53 | 4GB            | eMMC, microSD      | Wi-Fi 5, Bluetooth 5.0, Gigabit Ethernet         | $139.99            |
-| Libre Computer        | AML-S905X-CC (Le Potato)   | Amlogic S905X               | ARM Cortex-A53   | 1GB, 2GB, 4GB   | microSD            | Wi-Fi (with USB adapter), Bluetooth (with USB)   | $35 - $55          |
-| FriendlyARM           | NanoPi M4V2                | Rockchip RK3399             | ARM Cortex-A72/A53 | 2GB, 4GB       | microSD, eMMC      | Wi-Fi 5, Bluetooth 5.0, Gigabit Ethernet         | $65 - $75          |
-| Radxa                 | Rock Pi 3 Model A          | Rockchip RK3588             | ARM Cortex-A76/A55 | 2GB, 4GB, 8GB  | eMMC, microSD      | Wi-Fi 6, Bluetooth 5.0, Gigabit Ethernet         | $99 - $150         |
-| Orange Pi             | Orange Pi 5B               | Rockchip RK3588S            | ARM Cortex-A76/A55 | 4GB, 8GB, 16GB | eMMC, microSD      | Wi-Fi 6, Bluetooth 5.0, Gigabit Ethernet         | $89 - $129         |
+
+| Manufacturer          | Flagship Board             | Processor                   | Architecture       | RAM Options       | Storage Options    | Connectivity                                       | Price Range        |
+|-----------------------|----------------------------|-----------------------------|--------------------|-------------------|--------------------|----------------------------------------------------|--------------------|
+| Raspberry Pi          | Raspberry Pi 5             | Broadcom BCM2712            | ARM Cortex-A76     | 4GB, 8GB          | microSD, USB 3.0   | Wi-Fi 6, Bluetooth 5.0, Gigabit Ethernet           | $60 - $80          |
+| ASUS                  | Tinker Board 2S            | Rockchip RK3399             | ARM Cortex-A72/A53 | 2GB, 4GB          | 16GB eMMC, microSD | Wi-Fi 5, Bluetooth 4.2, Gigabit Ethernet           | $85 - $100         |
+| NVIDIA                | Jetson Nano 2GB            | NVIDIA Maxwell GPU          | ARM Cortex-A57     | 2GB               | microSD            | Wi-Fi (with USB adapter), Bluetooth (with USB)     | $59                |
+| ODROID                | ODROID-N2+                 | Amlogic S922X               | ARM Cortex-A73/A53 | 2GB, 4GB          | microSD, eMMC      | Gigabit Ethernet, Wi-Fi (with adapter), Bluetooth  | $79 - $90          |
+| Rock Pi               | Rock Pi 4C+                | Rockchip RK3399             | ARM Cortex-A72/A53 | 4GB               | microSD, eMMC      | Wi-Fi 5, Bluetooth 5.0, Gigabit Ethernet           | $69.99             |
+| Banana Pi             | Banana Pi M5               | Amlogic S905X3              | ARM Cortex-A55     | 4GB               | microSD, eMMC      | Wi-Fi 5, Bluetooth 5.0, Gigabit Ethernet           | $64 - $75          |
+| Pine64                | Pine A64+                  | Allwinner A64               | ARM Cortex-A53     | 2GB, 4GB          | microSD            | Wi-Fi (with USB adapter), Bluetooth (with USB)     | $29.99 - $39.99    |
+| BeagleBoard           | BeagleBone AI-64           | TI AM5729                   | ARM Cortex-A15     | 4GB               | microSD, eMMC      | Wi-Fi, Bluetooth, Gigabit Ethernet                 | $100 - $125        |
+| UDOO                  | UDOO Bolt V8               | AMD Ryzen V1605B            | x86-64             | 8GB, 16GB         | M.2 NVMe, SATA     | Wi-Fi, Bluetooth, Gigabit Ethernet                 | $389 - $409        |
+| Khadas                | Khadas VIM3 Pro            | Amlogic A311D               | ARM Cortex-A73/A53 | 4GB               | eMMC, microSD      | Wi-Fi 5, Bluetooth 5.0, Gigabit Ethernet           | $139.99            |
+| Libre Computer        | AML-S905X-CC (Le Potato)   | Amlogic S905X               | ARM Cortex-A53     | 1GB, 2GB, 4GB     | microSD            | Wi-Fi (with USB adapter), Bluetooth (with USB)     | $35 - $55          |
+| FriendlyARM           | NanoPi M4V2                | Rockchip RK3399             | ARM Cortex-A72/A53 | 2GB, 4GB          | microSD, eMMC      | Wi-Fi 5, Bluetooth 5.0, Gigabit Ethernet           | $65 - $75          |
+| Radxa                 | Rock Pi 3 Model A          | Rockchip RK3588             | ARM Cortex-A76/A55 | 2GB, 4GB, 8GB     | eMMC, microSD      | Wi-Fi 6, Bluetooth 5.0, Gigabit Ethernet           | $99 - $150         |
+| Orange Pi             | Orange Pi 5B               | Rockchip RK3588S            | ARM Cortex-A76/A55 | 4GB, 8GB, 16GB    | eMMC, microSD      | Wi-Fi 6, Bluetooth 5.0, Gigabit Ethernet           | $89 - $129         |
+
 
 However, the market is dominated by the Raspberry Pi. It is the de facto option and is synonymous with the term SBC. There are a number of models to choose from: 
-| Model                 | Release Date | Processor              | Architecture    | RAM Options            | Storage Options  | Connectivity                                       | Price Range      |
-|-----------------------|--------------|------------------------|-----------------|------------------------|------------------|----------------------------------------------------|------------------|
-| Raspberry Pi Model B  | 2012         | Broadcom BCM2835       | ARM11           | 256MB                  | SD Card          | 100 Mbps Ethernet, 2x USB 2.0                      | $25 - $35        |
-| Raspberry Pi Model A  | 2013         | Broadcom BCM2835       | ARM11           | 256MB, 512MB           | SD Card          | 1x USB 2.0                                         | $20 - $25        |
-| Raspberry Pi Model B+ | 2014         | Broadcom BCM2835       | ARM11           | 512MB                  | microSD          | 100 Mbps Ethernet, 4x USB 2.0                      | $25 - $35        |
-| Raspberry Pi Model A+ | 2014         | Broadcom BCM2835       | ARM11           | 256MB, 512MB           | microSD          | 1x USB 2.0                                         | $20 - $25        |
-| Raspberry Pi 2 Model B| 2015         | Broadcom BCM2836       | ARM Cortex-A7   | 1GB                    | microSD          | 100 Mbps Ethernet, 4x USB 2.0                      | $35              |
-| Raspberry Pi Zero     | 2015         | Broadcom BCM2835       | ARM11           | 512MB                  | microSD          | 1x mini HDMI, 1x micro USB                         | $5               |
-| Raspberry Pi 3 Model B| 2016         | Broadcom BCM2837       | ARM Cortex-A53  | 1GB                    | microSD          | Wi-Fi 4, Bluetooth 4.1, 100 Mbps Ethernet, 4x USB 2.0 | $35           |
-| Raspberry Pi Zero W   | 2017         | Broadcom BCM2835       | ARM11           | 512MB                  | microSD          | Wi-Fi 4, Bluetooth 4.1, 1x mini HDMI, 1x micro USB | $10              |
-| Raspberry Pi 3 Model A+| 2018        | Broadcom BCM2837B0     | ARM Cortex-A53  | 512MB                  | microSD          | Wi-Fi 4, Bluetooth 4.2, 1x USB 2.0                 | $25              |
-| Raspberry Pi 3 Model B+| 2018        | Broadcom BCM2837B0     | ARM Cortex-A53  | 1GB                    | microSD          | Wi-Fi 4, Bluetooth 4.2, Gigabit Ethernet (300 Mbps), 4x USB 2.0 | $35    |
-| Raspberry Pi 4 Model B| 2019         | Broadcom BCM2711       | ARM Cortex-A72  | 1GB, 2GB, 4GB, 8GB     | microSD          | Wi-Fi 5, Bluetooth 5.0, Gigabit Ethernet, 2x USB 3.0, 2x USB 2.0 | $35 - $75 |
-| Raspberry Pi 400      | 2020         | Broadcom BCM2711       | ARM Cortex-A72  | 4GB                    | microSD          | Wi-Fi 5, Bluetooth 5.0, Gigabit Ethernet, 3x USB 3.0, 1x USB 2.0 | $70   |
-| Raspberry Pi Pico     | 2021         | RP2040                 | ARM Cortex-M0+  | 264KB SRAM             | 2MB Flash        | 26x GPIO, 2x SPI, 2x I2C, 2x UART, 3x ADC          | $4               |
-| Raspberry Pi Pico W   | 2022         | RP2040                 | ARM Cortex-M0+  | 264KB SRAM             | 2MB Flash        | Wi-Fi 4, 26x GPIO, 2x SPI, 2x I2C, 2x UART, 3x ADC | $6               |
-| Raspberry Pi 4 Model A| 2022         | Broadcom BCM2711       | ARM Cortex-A72  | 2GB                    | microSD          | Wi-Fi 5, Bluetooth 5.0, Gigabit Ethernet, 1x USB 3.0, 1x USB 2.0 | $25    |
-| Raspberry Pi Zero 2 W | 2021         | Broadcom BCM2710A1     | ARM Cortex-A53  | 512MB                  | microSD          | Wi-Fi 4, Bluetooth 4.2, 1x mini HDMI, 1x micro USB | $15              |
-| Raspberry Pi 5        | 2023         | Broadcom BCM2712       | ARM Cortex-A76  | 4GB, 8GB               | microSD, USB 3.0 | Wi-Fi 6, Bluetooth 5.0, Gigabit Ethernet, 2x USB 3.0, 2x USB 2.0 | $60 - $80 |
+
+| Model                  | Release Date | Processor            | Architecture  | RAM Options         | Storage Options | Connectivity                                                                 | Price Range  |
+|------------------------|--------------|----------------------|---------------|---------------------|-----------------|-----------------------------------------------------------------------------|--------------|
+| Raspberry Pi Model B   | 2012         | Broadcom BCM2835     | ARM11         | 256MB               | SD Card         | 100 Mbps Ethernet, 2x USB 2.0                                              | $25 - $35    |
+| Raspberry Pi Model A   | 2013         | Broadcom BCM2835     | ARM11         | 256MB, 512MB        | SD Card         | 1x USB 2.0                                                                 | $20 - $25    |
+| Raspberry Pi Model B+  | 2014         | Broadcom BCM2835     | ARM11         | 512MB               | microSD         | 100 Mbps Ethernet, 4x USB 2.0                                              | $25 - $35    |
+| Raspberry Pi Model A+  | 2014         | Broadcom BCM2835     | ARM11         | 256MB, 512MB        | microSD         | 1x USB 2.0                                                                 | $20 - $25    |
+| Raspberry Pi 2 Model B | 2015         | Broadcom BCM2836     | ARM Cortex-A7 | 1GB                 | microSD         | 100 Mbps Ethernet, 4x USB 2.0                                              | $35          |
+| Raspberry Pi Zero      | 2015         | Broadcom BCM2835     | ARM11         | 512MB               | microSD         | 1x mini HDMI, 1x micro USB                                                 | $5           |
+| Raspberry Pi 3 Model B | 2016         | Broadcom BCM2837     | ARM Cortex-A53| 1GB                 | microSD         | Wi-Fi 4, Bluetooth 4.1, 100 Mbps Ethernet, 4x USB 2.0                      | $35          |
+| Raspberry Pi Zero W    | 2017         | Broadcom BCM2835     | ARM11         | 512MB               | microSD         | Wi-Fi 4, Bluetooth 4.1, 1x mini HDMI, 1x micro USB                         | $10          |
+| Raspberry Pi 3 Model A+| 2018         | Broadcom BCM2837B0   | ARM Cortex-A53| 512MB               | microSD         | Wi-Fi 4, Bluetooth 4.2, 1x USB 2.0                                         | $25          |
+| Raspberry Pi 3 Model B+| 2018         | Broadcom BCM2837B0   | ARM Cortex-A53| 1GB                 | microSD         | Wi-Fi 4, Bluetooth 4.2, Gigabit Ethernet (300 Mbps), 4x USB 2.0            | $35          |
+| Raspberry Pi 4 Model B | 2019         | Broadcom BCM2711     | ARM Cortex-A72| 1GB, 2GB, 4GB, 8GB  | microSD         | Wi-Fi 5, Bluetooth 5.0, Gigabit Ethernet, 2x USB 3.0, 2x USB 2.0           | $35 - $75    |
+| Raspberry Pi 400       | 2020         | Broadcom BCM2711     | ARM Cortex-A72| 4GB                 | microSD         | Wi-Fi 5, Bluetooth 5.0, Gigabit Ethernet, 3x USB 3.0, 1x USB 2.0           | $70          |
+| Raspberry Pi Pico      | 2021         | RP2040               | ARM Cortex-M0+| 264KB SRAM          | 2MB Flash       | 26x GPIO, 2x SPI, 2x I2C, 2x UART, 3x ADC                                   | $4           |
+| Raspberry Pi Pico W    | 2022         | RP2040               | ARM Cortex-M0+| 264KB SRAM          | 2MB Flash       | Wi-Fi 4, 26x GPIO, 2x SPI, 2x I2C, 2x UART, 3x ADC                         | $6           |
+| Raspberry Pi 4 Model A | 2022         | Broadcom BCM2711     | ARM Cortex-A72| 2GB                 | microSD         | Wi-Fi 5, Bluetooth 5.0, Gigabit Ethernet, 1x USB 3.0, 1x USB 2.0           | $25          |
+| Raspberry Pi Zero 2 W  | 2021         | Broadcom BCM2710A1   | ARM Cortex-A53| 512MB               | microSD         | Wi-Fi 4, Bluetooth 4.2, 1x mini HDMI, 1x micro USB                         | $15          |
+| Raspberry Pi 5         | 2023         | Broadcom BCM2712     | ARM Cortex-A76| 4GB, 8GB            | microSD, USB 3.0 | Wi-Fi 6, Bluetooth 5.0, Gigabit Ethernet, 2x USB 3.0, 2x USB 2.0           | $60 - $80    |
+
 
 
 ## Why Raspberry Pi?
