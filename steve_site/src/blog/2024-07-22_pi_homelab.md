@@ -1,6 +1,9 @@
 # Raspberry Pi at Home 🥧 (2024-07-22)
 
+![](../img/hold_pi.jpg =700x900 center)
+
 *[Let's Take a Trip To Pie Country](https://youtu.be/EF4m4h15qEA)*
+
 
 ## What is an SBC?
 
@@ -59,10 +62,19 @@ Again there are a plethora of way to utilize a Pi due to the sheer amount of ope
 * DNS through [PiHole](https://pi-hole.net/)
 * Dynamic DNS through [ddclient](https://ddclient.net/) and [DuckDNS](https://www.duckdns.org/)
 * VPNs through [PiVPN](https://www.pivpn.io/)
+* IP KVM using the [PiKVM board](https://pikvm.org/)
 * File sharing through [Samba](https://www.samba.org/)
 * Media through [Plex](https://www.plex.tv/)
 * Password management through [Passbolt](https://www.passbolt.com/)
 * Site hosting through Apache and Nginx
+
+![pi box](../img/pi_box.jpg =700x500 center)
+
+*A freshly arrived piKVM*
+
+![](../img/pi_kvm.jpg =700x500 center)
+
+*That piKVM running booted off of a USB*
 
 I've used containers to run things like this as often as possible. Many utilities are available as container images on [Dockerhub](https://hub.docker.com/), however mileage may vary as ARM image are less common. I prefer containers due to the contained nature of the binaries and configurations. Everything can be contained in a single [docker-compose](https://docs.docker.com/compose/) file, which is very convenient. 
 In the past I've even had my Pis clustered using Kubernetes, but that was more for educational purposes. 

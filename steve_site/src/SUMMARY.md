@@ -4,6 +4,7 @@
 - [Resume](./resume/resume.md)
 - [Works](./works/works.md)
 - [Blog](./blog/blog.md)
+  - [My Linux Setup](./blog/2024-07-23_my_setup.md)
   - [Pi Homelab](./blog/2024-07-22_pi_homelab.md)
   - [Over The Wire Flag Captured](./blog/2024-07-17_wire.md)
   - [Basic Calculus in C](./blog/2024-07-10_calc_in_c.md)

@@ -10,3 +10,5 @@ additional-css = ["custom.css"]
 mathjax-support = true
 no-section-label = true
 
+[preprocessor.image-size]
+command = "mdbook-image-size"

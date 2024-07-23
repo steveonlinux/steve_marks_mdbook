@@ -1,4 +1,4 @@
-# Stephen J Marks
+# Stephen J Marks &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Resume](../img/resume_stephen_marks.pdf)&nbsp;&nbsp;&nbsp; [Blog](../blog/blog.md) &nbsp;&nbsp;&nbsp;[Works](../works/works.md) &nbsp;&nbsp;&nbsp;[Notes](../notes/notes.md)
 ### "[Do One Thing Well](https://en.wikipedia.org/wiki/Unix_philosophy)" - Doug Mcllroy
 
 <div style="text-align: justify;">
