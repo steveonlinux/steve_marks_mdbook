@@ -16,3 +16,6 @@ git-repository-icon = "fa-github"
 
 [preprocessor.image-size]
 command = "mdbook-image-size"
+
+[output.html.fold]
+enable = true
