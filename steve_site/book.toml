@@ -6,9 +6,13 @@ src = "src"
 title = "Stephen Mark's Personal Website"
 
 [output.html]
+default-theme = "ayu"
+preferred-dark-theme = "ayu"
 additional-css = ["custom.css"]
 mathjax-support = true
 no-section-label = true
+git-repository-url = "https://github.com/steveonlinux"
+git-repository-icon = "fa-github"
 
 [preprocessor.image-size]
 command = "mdbook-image-size"
