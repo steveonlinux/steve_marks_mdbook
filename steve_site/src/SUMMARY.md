@@ -4,6 +4,7 @@
 - [Resume](./resume/resume.md)
 - [Works](./works/works.md)
 - [Blog](./blog/blog.md)
+  - [On Pseudo Devices](./blog/2024-07-30_pseudo.md)
   - [Bootloaderless Boot With EFIstub](./blog/2024-07-25_efistub.md)
   - [Built-ins, Utilities, Functions, and System Calls](./blog/2024-07-25_builtin.md)
   - [Gnu++ in Rust Install Script](./blog/2024-07-24_gnu++.md)
