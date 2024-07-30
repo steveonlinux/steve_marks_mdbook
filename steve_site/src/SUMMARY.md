@@ -4,6 +4,7 @@
 - [Resume](./resume/resume.md)
 - [Works](./works/works.md)
 - [Blog](./blog/blog.md)
+  - [On Inodes and the Inode Pointer Structure](./blog/2024-07-30_inode.md)
   - [On Pseudo Devices](./blog/2024-07-30_pseudo.md)
   - [Bootloaderless Boot With EFIstub](./blog/2024-07-25_efistub.md)
   - [Built-ins, Utilities, Functions, and System Calls](./blog/2024-07-25_builtin.md)
