@@ -1,0 +1,32 @@
+# On Installing Gentoo For Some Reason (2024-08-21)
+I decided to install Gentoo on a whim. I've done it a coule of times in the past, even on Raspberry Pis. But that was before the recent change [implementing mass binary alternatives](https://www.gentoo.org/news/2023/12/29/Gentoo-binary.html) to the compilation Gentoo is known for. Binaries have been availalbe for a while already, but I'm interested to check out this chnage. Gentoo's biggest con for me is the time it takes to install packages if you don't have a Threadipper. Here I will just be going over my thoughts and experiences. This isn't an actual guide, for that use their [handbook](https://wiki.gentoo.org/wiki/Handbook:Main_Page) for the appropriate architecture.
+
+## Where
+I decided to install Gentoo in a vm. I went with virtualbox over kvm/qemu because a bridged network will already be setup for ssh and it will be easier to get a shared clipbaord going. 
+
+## Installation of Minimal Linux Distros
+Miminal distros like Gentoo and Arch have the essential parts of every distribution, just less obuscated. They have the follwoing cadence:
+* Partition drives and create filesystems
+* mount root partition
+* *chroot* into root partition
+* setup up install in chroot enviornment
+    * network, packages, fstab, bootloader, users, etc.
+* post install
+[*Chroot*](https://linux.die.net/man/1/chroot) is a command that essentially changes the root to a new location. So that everything within the chroot is happening relative to that new root. That is why we chroot into the mounted root partiiton during installs becauase at that point we are configuring the actual system to be installed. Take not of this command as it will ultimately help troubleshoot installs from a live cd. Often other paths have to be mounted from the host system to the chroot so that it can be a functioning live enviornment essentially.
+## Tips for Installing Gentoo
+* Remember to utilize **chroot**. You don't have to complete the install all at once. Per the handbook, past that point you can always mount your root partition into an environment and with the correct mounts and get back into the system. For there you can continue the installation or fix an issue. 
+* If you are not installing Gentoo in a GUI already, and you have access to another machine on the network, I recommeded remoting into the machine Gentoo is being installed on via **SSH**. This can be doned after being chrooted. Copy and pasting from a web browser makes things so convenient. *This will require network bridging*
+    1. Get network up: `net-setup [interface]`
+    2. Change root's password via `passwd`
+    3. Start the ssh daemon with: `/etc/init.d/sshd start`
+* Take advanatge of the newly available [**binaries**](https://wiki.gentoo.org/wiki/Binary_package_guide) for better install times
+* Use [ccache](https://wiki.gentoo.org/wiki/Ccache). At the very least. ccache is a program that caches compiled source so it doesn't have to be recompiled later. Makes late compialtions quicker, which is needed on Gentoo. 
+* Use [distcc](https://wiki.gentoo.org/wiki/Distcc) is you have other computers on the network with good CPUs. distcc distributes compialtion workloads across multiple computers. Can make your install a breeze.
+
+## My Troubles
+* Forgot boot flag on `/boot` which I caught before it mattered
+* fstab typo which caused first boot to be to `emergency.target`
+*I fixed both by chrooting back into root and fixing the issue.*
+
+## Gentoo is fun
+I like Gentoo for messing around. It seems like a good educational tool the way LFS can be. Also seems great for development environments. Would never use it on an actual install for a server or desktop though...again. In those instances there is way too much upkeep for what is gained.
