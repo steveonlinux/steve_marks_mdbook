@@ -4,7 +4,7 @@
 <div style="text-align: justify;">
     <img src="/img/watch_sit.jpeg" alt="image" style="float: right; margin-left: 20px; width: 500px; height: auto;">
     <p>
-        Hello! I’m a Computer Science and Math major with a deep passion for Linux. I'm hosting this site to write about using Linux and anything else that comes to mind. I may also post about films or other kinds of art. This site is generated using [mdbook](https://rust-lang.github.io/mdBook/).
+        Hello! I’m a Computer Science and Math major with a deep passion for Linux. I'm hosting this site to write about using Linux and anything else that comes to mind relating to CompSci, Math, Films, Photography, or art in general. This site is generated using mdbook.
 <br>
     </p>
 </div>

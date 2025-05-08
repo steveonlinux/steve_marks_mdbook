@@ -1,8 +1,7 @@
 # Summary
 
 - [Biography](./bio/bio.md)
-- [Resume](./resume/resume.md)
-- [Works](./works/works.md)
+- [Photography](./photo/photo.md)
 - [Blog](./blog/blog.md)
   - [On Installing Gentoo For Some Reason](./blog/2024-08-21_gentoo.md)
   - [Major Packaging Systems Disambiguation](./blog/2024-08-21_packages.md)
